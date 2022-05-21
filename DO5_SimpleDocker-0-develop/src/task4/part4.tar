@@ -1,0 +1,5 @@
+2022-05-18T14:39:44.652+0700	[34mINFO[0m	Failed to check latest version. not found version patterns
+2022-05-18T14:39:46.892+0700	[31mFATAL[0m	unable to initialize a image struct: failed to initialize source: reading manifest latest in docker.io/library/save: errors:
+denied: requested access to the resource is denied
+unauthorized: authentication required
+

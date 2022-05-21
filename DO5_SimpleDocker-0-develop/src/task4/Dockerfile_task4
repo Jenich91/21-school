@@ -1,0 +1,8 @@
+FROM nginx
+USER root
+WORKDIR /server/
+COPY "task3/server/server.c" .
+COPY "task3/server/nginx.conf" /etc/nginx/
+COPY "task4/task4.sh" ./task4.sh
+RUN apt-get update && apt install -y gcc libfcgi-dev spawn-fcgi;
+ENTRYPOINT [ "/bin/bash", "/server/task4.sh" ]
