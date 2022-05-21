@@ -1,0 +1,120 @@
+\input texinfo
+
+@ifnottex
+@paragraphindent 0
+@end ifnottex
+@titlepage
+@title
+@end titlepage
+
+@node Top
+@top This is a guide for the SmartCalc program from an Sfeta, School21 student.
+This program is able to calculate mathematical expressions, draw a graph of a function, and there is also a loan calculator.
+
+    Install and makefile
+
+To install the program, use the goal: make install
+
+If you need to install to another folder, type: make install INSTALL_ROOT=``your path''
+If the installation path is not specified, the installation takes
+place in the Build folder - in the root directory of this program.
+
+To clean the src from temporary files from the program build, enter: make
+clean
+
+To archive the program, use the goal, the results will be in the
+root folder(1 folder above src): make dist
+
+To uninstall the program,
+use the goal: make uninstall
+
+To create the program documentation, use
+the goal: make div The result in the form of an pdf file will be located
+in folder installed app
+
+To run the tests, use the goal: make test
+
+To run app, go to Build/smartcalc/bin/ And run the smartcalc executable
+
+    Calculator 
+
+To enter an expression, you can press the virtual buttons of the
+program, or use keyboard input.
+
+Hotkeys are provided for some actions
+(for example, entering functions or mod).
+
+List of hotkeys:
+Keys from 0 to 9 for entering numbers;
+
+X key for x;
+
+c key for cos;
+
+C key for acos;
+
+t key for tan;
+
+T key for atan;
+
+l key for ln;
+
+L key for log;
+
+Key ( for the opening parenthesis Key ) for the closing parenthesis;
+
+The Circumflex key for exponentiation;
+
+AC key to reset values;
+
++/- key to add a unary minus to a number;
+
+The m key for the remainder of the division;
+
+The / key for division * Key for multiplication;
+
+The key is for subtraction + key for addition;
+
+The key . to enter a floating point number;
+
+Key = to calculate the expression;
+
+G key or Draw graphic button to draw the graph
+
+
+When pressing the number or function keys, the contents of the button
+are added to the intermediate screen, where you can change the sign, add
+a dot, open/close brackets. The input to the intermediate screen
+continues until the operator or = is pressed.
+
+If the operator is pressed, the operand from the intermediate screen is
+added to the expression string, when you press the number or function
+key, the operand input begins again, this happens before pressing =.
+
+When entering an expression with x, you need to fill in the field for
+the value of x, it is located to the left of the expression input line.
+
+It is also possible to enter an expression into a string directly from
+the keyboard, but it is necessary to independently monitor the
+correctness of the expression, for example, close brackets, correctly
+apply operators, when entering an incorrect expression there are checks,
+but they are not ideal.
+
+When you click on Draw graphic and the x value, the function graph will
+be drawn, and you will switch to the graph window.
+
+    Calculator  After clicking on
+the graph rendering button (in the calculator tab), or clicking on the g
+button, you switch to the graph tab, where the graph of the entered
+expression is drawn. In the start and end number input forms, you can
+set the rendering range from -1000000 to 1000000, but it's better to set
+such large values - it may take a long time, or the program may hang, by
+default the graph is drawn from -10 to 10, after entering the number,
+you can press Enter to redraw with new values. The Clear button is used
+to clear the chart, or you can use the ESC key to clear and go to the
+calculator tab. To move around the coordinate field, you can use the
+mouse - click and pull, to change the scale, use the mouse wheel scroll.
+
+@bye
+
+163 142 141 162 162 151 143 141 144 141 163
